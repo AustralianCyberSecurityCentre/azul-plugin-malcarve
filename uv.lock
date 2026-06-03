@@ -8,17 +8,16 @@ resolution-markers = [
 ]
 
 [options]
-exclude-newer = "2026-05-27T23:07:16.687297337Z"
+exclude-newer = "2026-05-27T23:15:29.95852774Z"
 exclude-newer-span = "P1W"
 
 [options.exclude-newer-package]
-malcarve-cbl = false
-azul-plugin-retrohunt = false
-azul-security = false
-azul-nsrl-lookup-serve = false
-azul-runner = false
-azul-metastore = false
 azul-bedrock = false
+azul-security = false
+azul-runner = false
+malcarve-cbl = false
+azul-metastore = false
+azul-plugin-retrohunt = false
 azul-nsrl-lookup-server = false
 
 [[package]]
