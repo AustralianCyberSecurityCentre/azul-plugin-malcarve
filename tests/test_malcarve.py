@@ -34,8 +34,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="8938838db8d16708692e80d170e0d8dc1522531e5a5ab5ae878a27a147780f44",
+                        sha256="8938838db8d16708692e80d170e0d8dc1522531e5a5ab5ae878a27a147780f44",
                         features={
                             "embedded_payload_type": [
                                 FV("pe", label="charcodes(0x88f-0x9e06)->(0x0-0x3800)", offset=2191, size=38263),
@@ -81,11 +80,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="8938838db8d16708692e80d170e0d8dc1522531e5a5ab5ae878a27a147780f44",
+                            sha256="8938838db8d16708692e80d170e0d8dc1522531e5a5ab5ae878a27a147780f44",
                         ),
-                        entity_type="binary",
-                        entity_id="814f21f8c2befba504e592e3396be7454f93013939325cc7fbad5c38f022b395",
+                        sha256="814f21f8c2befba504e592e3396be7454f93013939325cc7fbad5c38f022b395",
                         relationship={
                             "offset": "0x88f",
                             "action": "deobfuscated",
@@ -101,11 +98,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="8938838db8d16708692e80d170e0d8dc1522531e5a5ab5ae878a27a147780f44",
+                            sha256="8938838db8d16708692e80d170e0d8dc1522531e5a5ab5ae878a27a147780f44",
                         ),
-                        entity_type="binary",
-                        entity_id="1a7ceaddf547d47cf7d2d7eda0357d38f489eaeb3b06ea3027ae87df6e5c8195",
+                        sha256="1a7ceaddf547d47cf7d2d7eda0357d38f489eaeb3b06ea3027ae87df6e5c8195",
                         relationship={
                             "offset": "0x9e35",
                             "action": "deobfuscated",
@@ -145,8 +140,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="c08dbe159814900e43ea8e1b8bbc3b8a9b63a57d077b4d80289670b883e91bf2",
+                        sha256="c08dbe159814900e43ea8e1b8bbc3b8a9b63a57d077b4d80289670b883e91bf2",
                         features={
                             "embedded_payload_type": [FV("pe", label="rolling_xor(0x7-0x3007)", offset=7, size=12288)],
                             "payload_obfuscation": [FV("rolling_xor", label="rolling_xor(0x7-0x3007)")],
@@ -160,11 +154,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="c08dbe159814900e43ea8e1b8bbc3b8a9b63a57d077b4d80289670b883e91bf2",
+                            sha256="c08dbe159814900e43ea8e1b8bbc3b8a9b63a57d077b4d80289670b883e91bf2",
                         ),
-                        entity_type="binary",
-                        entity_id="8a8474143cbc5f6849db16664a510b2141830674943e33e02b783c2920ea2d8a",
+                        sha256="8a8474143cbc5f6849db16664a510b2141830674943e33e02b783c2920ea2d8a",
                         relationship={
                             "offset": "0x7",
                             "key": "0x0d",
@@ -202,8 +194,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="50d8d48d5dc5107190fa0fd9e1d9b3a319d1badcddeb1b148449f7441f5a68a3",
+                        sha256="50d8d48d5dc5107190fa0fd9e1d9b3a319d1badcddeb1b148449f7441f5a68a3",
                         features={
                             "embedded_payload_type": [
                                 FV("pe", label="(0x0-0xffc00)", offset=0, size=1047552),
@@ -229,11 +220,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="50d8d48d5dc5107190fa0fd9e1d9b3a319d1badcddeb1b148449f7441f5a68a3",
+                            sha256="50d8d48d5dc5107190fa0fd9e1d9b3a319d1badcddeb1b148449f7441f5a68a3",
                         ),
-                        entity_type="binary",
-                        entity_id="27ddc9b2dd5ff4c3bcdb3444b7912d93999694261c64db2b2492f859709e8e0e",
+                        sha256="27ddc9b2dd5ff4c3bcdb3444b7912d93999694261c64db2b2492f859709e8e0e",
                         relationship={"offset": "0x0", "action": "extracted"},
                         data=[
                             EventData(
@@ -244,11 +233,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="50d8d48d5dc5107190fa0fd9e1d9b3a319d1badcddeb1b148449f7441f5a68a3",
+                            sha256="50d8d48d5dc5107190fa0fd9e1d9b3a319d1badcddeb1b148449f7441f5a68a3",
                         ),
-                        entity_type="binary",
-                        entity_id="611fa395f0a24eeb12232e0337cc7cd41b3ea831e0cb7fa370a4d077170228ab",
+                        sha256="611fa395f0a24eeb12232e0337cc7cd41b3ea831e0cb7fa370a4d077170228ab",
                         relationship={
                             "key": "0x0000000500",
                             "action": "deobfuscated",
@@ -288,8 +275,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="f691607006edcedd21d878b8d77bde839d2dad2940239f4217979e72fc21f6af",
+                        sha256="f691607006edcedd21d878b8d77bde839d2dad2940239f4217979e72fc21f6af",
                         features={
                             "payload_obfuscation_all": [FV("deflate", label="deflate(0x1d868)->(0x3c0-0x409)")],
                             "payload_obfuscation": [FV("deflate", label="deflate(0x1d868)->(0x3c0-0x409)")],
@@ -317,8 +303,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="201e44079f65160598309b00ac3755c093ba8f1f54238e794789345a68b94f13",
+                        sha256="201e44079f65160598309b00ac3755c093ba8f1f54238e794789345a68b94f13",
                         features={
                             "embedded_payload_type": [FV("url", label="(0x9-0x18)", offset=9, size=15)],
                             "embedded_url": [FV("http://test.com", label="(0x9-0x18)", offset=9, size=15)],
@@ -422,8 +407,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="6465a6d23093b08a7db6d133e9f31c7dbbab3fbe6b8a75428f7a9c36b69abc7f",
+                        sha256="6465a6d23093b08a7db6d133e9f31c7dbbab3fbe6b8a75428f7a9c36b69abc7f",
                         features={
                             "embedded_payload_type": [FV("url", label="rol(0x197-0x1c6)", offset=407, size=47)],
                             "embedded_url": [
@@ -462,8 +446,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="fa2c0695b0f560134a54daf9858f1b766803c4fc843f830953e1048715c22deb",
+                        sha256="fa2c0695b0f560134a54daf9858f1b766803c4fc843f830953e1048715c22deb",
                         features={
                             "embedded_payload_type": [
                                 FV("pe", label="xor(0xa89-0x8889)", offset=2697, size=32256),
@@ -530,11 +513,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="fa2c0695b0f560134a54daf9858f1b766803c4fc843f830953e1048715c22deb",
+                            sha256="fa2c0695b0f560134a54daf9858f1b766803c4fc843f830953e1048715c22deb",
                         ),
-                        entity_type="binary",
-                        entity_id="f40150dd48454d9f1931ef0dd13b72ab1b841a81172142cfd1fa01b9de4b347f",
+                        sha256="f40150dd48454d9f1931ef0dd13b72ab1b841a81172142cfd1fa01b9de4b347f",
                         relationship={
                             "offset": "0xa89",
                             "key": "0x0000a0",
@@ -622,8 +603,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="8e0e65a6cb50aa3d26948758d200bf940aafcbdeed5959543eadbda4b342abe0",
+                        sha256="8e0e65a6cb50aa3d26948758d200bf940aafcbdeed5959543eadbda4b342abe0",
                         features={
                             "embedded_payload_type": [
                                 FV(
@@ -710,11 +690,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="8e0e65a6cb50aa3d26948758d200bf940aafcbdeed5959543eadbda4b342abe0",
+                            sha256="8e0e65a6cb50aa3d26948758d200bf940aafcbdeed5959543eadbda4b342abe0",
                         ),
-                        entity_type="binary",
-                        entity_id="272e64291748fa8be01109faa46c0ea919bf4baf4924177ea6ac2ee0574f1c1a",
+                        sha256="272e64291748fa8be01109faa46c0ea919bf4baf4924177ea6ac2ee0574f1c1a",
                         relationship={
                             "offset": "0x8ef6",
                             "action": "deobfuscated",
@@ -730,11 +708,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="8e0e65a6cb50aa3d26948758d200bf940aafcbdeed5959543eadbda4b342abe0",
+                            sha256="8e0e65a6cb50aa3d26948758d200bf940aafcbdeed5959543eadbda4b342abe0",
                         ),
-                        entity_type="binary",
-                        entity_id="d65a3033e440575a7d32f4399176e0cdb1b7e4efa108452fcdde658e90722653",
+                        sha256="d65a3033e440575a7d32f4399176e0cdb1b7e4efa108452fcdde658e90722653",
                         relationship={
                             "offset": "0xcff4",
                             "action": "deobfuscated",
@@ -750,11 +726,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="8e0e65a6cb50aa3d26948758d200bf940aafcbdeed5959543eadbda4b342abe0",
+                            sha256="8e0e65a6cb50aa3d26948758d200bf940aafcbdeed5959543eadbda4b342abe0",
                         ),
-                        entity_type="binary",
-                        entity_id="0421fab0c9260a7fe3361361581d84c000ed3057b9587eb4a97b6f5dc284a7af",
+                        sha256="0421fab0c9260a7fe3361361581d84c000ed3057b9587eb4a97b6f5dc284a7af",
                         relationship={
                             "offset": "0xfd70",
                             "action": "deobfuscated",
@@ -770,11 +744,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="8e0e65a6cb50aa3d26948758d200bf940aafcbdeed5959543eadbda4b342abe0",
+                            sha256="8e0e65a6cb50aa3d26948758d200bf940aafcbdeed5959543eadbda4b342abe0",
                         ),
-                        entity_type="binary",
-                        entity_id="6f3cf374a1aa961be87dde5aaeb1706d95cdcadbd1a4c961363e5ff33fab168d",
+                        sha256="6f3cf374a1aa961be87dde5aaeb1706d95cdcadbd1a4c961363e5ff33fab168d",
                         relationship={
                             "offset": "0x19096",
                             "action": "deobfuscated",
@@ -816,8 +788,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="7bd7296e7dd38e6e23c4e11a9723e956be251a4142407676d84240541d3d37f1",
+                        sha256="7bd7296e7dd38e6e23c4e11a9723e956be251a4142407676d84240541d3d37f1",
                         features={
                             "embedded_payload_type": [
                                 FV("pe", label="lznt1(0x23244-0x2a6ee)", offset=143940, size=29866),
@@ -841,11 +812,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="7bd7296e7dd38e6e23c4e11a9723e956be251a4142407676d84240541d3d37f1",
+                            sha256="7bd7296e7dd38e6e23c4e11a9723e956be251a4142407676d84240541d3d37f1",
                         ),
-                        entity_type="binary",
-                        entity_id="2d0bcc8dce0a65ec302bfe3a49c143ba852d50286893657674c6c7fe73b70bff",
+                        sha256="2d0bcc8dce0a65ec302bfe3a49c143ba852d50286893657674c6c7fe73b70bff",
                         relationship={
                             "offset": "0xb188",
                             "action": "deobfuscated",
@@ -861,11 +830,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="7bd7296e7dd38e6e23c4e11a9723e956be251a4142407676d84240541d3d37f1",
+                            sha256="7bd7296e7dd38e6e23c4e11a9723e956be251a4142407676d84240541d3d37f1",
                         ),
-                        entity_type="binary",
-                        entity_id="1fa5dca1771d75940cd5364edb358d914baaefdc56f2d21d573bbce22d41b205",
+                        sha256="1fa5dca1771d75940cd5364edb358d914baaefdc56f2d21d573bbce22d41b205",
                         relationship={
                             "offset": "0x23244",
                             "action": "deobfuscated",
@@ -881,11 +848,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="7bd7296e7dd38e6e23c4e11a9723e956be251a4142407676d84240541d3d37f1",
+                            sha256="7bd7296e7dd38e6e23c4e11a9723e956be251a4142407676d84240541d3d37f1",
                         ),
-                        entity_type="binary",
-                        entity_id="d65d3acf805651b38ec3c6eee1fb4efa83824fdd7e407495cdb9f6ad9b8e0c7d",
+                        sha256="d65d3acf805651b38ec3c6eee1fb4efa83824fdd7e407495cdb9f6ad9b8e0c7d",
                         relationship={
                             "offset": "0x2a6f0",
                             "action": "deobfuscated",
@@ -901,11 +866,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="7bd7296e7dd38e6e23c4e11a9723e956be251a4142407676d84240541d3d37f1",
+                            sha256="7bd7296e7dd38e6e23c4e11a9723e956be251a4142407676d84240541d3d37f1",
                         ),
-                        entity_type="binary",
-                        entity_id="18ec72076fb151ad97aeaa5e18d357aeb77c405dd867703e6709b9ede40cb237",
+                        sha256="18ec72076fb151ad97aeaa5e18d357aeb77c405dd867703e6709b9ede40cb237",
                         relationship={
                             "offset": "0x6a740",
                             "action": "deobfuscated",
@@ -948,8 +911,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="9220bf9868b53018dbd9a76ff2044ddfe604c0241ec890a3071f4a5162c3c825",
+                        sha256="9220bf9868b53018dbd9a76ff2044ddfe604c0241ec890a3071f4a5162c3c825",
                         features={
                             "embedded_payload_type": [
                                 FV("pe", label="xor(0x4-0x46b16)->lznt1(0x0-0x46b12)", offset=4, size=289554)
@@ -967,11 +929,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="9220bf9868b53018dbd9a76ff2044ddfe604c0241ec890a3071f4a5162c3c825",
+                            sha256="9220bf9868b53018dbd9a76ff2044ddfe604c0241ec890a3071f4a5162c3c825",
                         ),
-                        entity_type="binary",
-                        entity_id="b7a755646d17c7fff3ed92fd9c5e34a5d0f93fb6dcb1c3e5246c6e3915cdff1a",
+                        sha256="b7a755646d17c7fff3ed92fd9c5e34a5d0f93fb6dcb1c3e5246c6e3915cdff1a",
                         relationship={
                             "offset": "0x4",
                             "key": "0x3eef388f",
@@ -1010,8 +970,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="181aeaed1d4b5107d42809cf519b6b1f8719b64491900295dce952aa163858a2",
+                        sha256="181aeaed1d4b5107d42809cf519b6b1f8719b64491900295dce952aa163858a2",
                         features={
                             "payload_obfuscation_all": [FV("base64", label="base64(0x1a6-0x1f2)->(0x0-0x38)")],
                             "payload_obfuscation": [FV("base64", label="base64(0x1a6-0x1f2)->(0x0-0x38)")],
@@ -1051,8 +1010,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="f42a03109b75c236fa11edb290a7ebda8f8d32453f26a77710f12ff33d2ba797",
+                        sha256="f42a03109b75c236fa11edb290a7ebda8f8d32453f26a77710f12ff33d2ba797",
                         features={
                             "payload_obfuscation_all": [FV("reverse", label="reverse->(0x1cec6-0x1cedc)")],
                             "payload_obfuscation": [FV("reverse", label="reverse->(0x1cec6-0x1cedc)")],
@@ -1082,8 +1040,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="c2c1ef904a2ef997d21e24a845a280fb202b130bf08fcdf59c727f13019b1f59",
+                        sha256="c2c1ef904a2ef997d21e24a845a280fb202b130bf08fcdf59c727f13019b1f59",
                         features={
                             "embedded_payload_type": [
                                 FV("pe", label="(0x0-0x61c00)", offset=0, size=400384),
@@ -1156,11 +1113,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="c2c1ef904a2ef997d21e24a845a280fb202b130bf08fcdf59c727f13019b1f59",
+                            sha256="c2c1ef904a2ef997d21e24a845a280fb202b130bf08fcdf59c727f13019b1f59",
                         ),
-                        entity_type="binary",
-                        entity_id="bcc8bafe17b5c854529ee7bb96938e37d09c711eed3d0e76308d3ecda096b271",
+                        sha256="bcc8bafe17b5c854529ee7bb96938e37d09c711eed3d0e76308d3ecda096b271",
                         relationship={"offset": "0x0", "action": "extracted"},
                         data=[
                             EventData(
@@ -1193,8 +1148,7 @@ class TestExecute(test_template.TestPlugin):
                 state=State(State.Label.COMPLETED),
                 events=[
                     Event(
-                        entity_type="binary",
-                        entity_id="c0af4d1ea624b223ebf5d38e40d513c29623e50b4ab69121b4c0073fe3bc9f23",
+                        sha256="c0af4d1ea624b223ebf5d38e40d513c29623e50b4ab69121b4c0073fe3bc9f23",
                         features={
                             "embedded_payload_type": [
                                 FV("pe", label="(0x0-0x3945)", offset=0, size=14661),
@@ -1529,11 +1483,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="c0af4d1ea624b223ebf5d38e40d513c29623e50b4ab69121b4c0073fe3bc9f23",
+                            sha256="c0af4d1ea624b223ebf5d38e40d513c29623e50b4ab69121b4c0073fe3bc9f23",
                         ),
-                        entity_type="binary",
-                        entity_id="ade6ff26af4e1c1ac3e5f75ef727c7f72ee96381c7ef6793074cc82c95f8d0be",
+                        sha256="ade6ff26af4e1c1ac3e5f75ef727c7f72ee96381c7ef6793074cc82c95f8d0be",
                         relationship={"offset": "0x0", "action": "extracted"},
                         data=[
                             EventData(
@@ -1544,11 +1496,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="c0af4d1ea624b223ebf5d38e40d513c29623e50b4ab69121b4c0073fe3bc9f23",
+                            sha256="c0af4d1ea624b223ebf5d38e40d513c29623e50b4ab69121b4c0073fe3bc9f23",
                         ),
-                        entity_type="binary",
-                        entity_id="0187fe53b290201f369698733e607cd8dda055ab8788173c2527a55b54dadf79",
+                        sha256="0187fe53b290201f369698733e607cd8dda055ab8788173c2527a55b54dadf79",
                         relationship={"offset": "0x73fe", "action": "extracted"},
                         data=[
                             EventData(
@@ -1559,11 +1509,9 @@ class TestExecute(test_template.TestPlugin):
                     ),
                     Event(
                         parent=EventParent(
-                            entity_type="binary",
-                            entity_id="c0af4d1ea624b223ebf5d38e40d513c29623e50b4ab69121b4c0073fe3bc9f23",
+                            sha256="c0af4d1ea624b223ebf5d38e40d513c29623e50b4ab69121b4c0073fe3bc9f23",
                         ),
-                        entity_type="binary",
-                        entity_id="78dacf6053b7c1719847319fc96dd6ea24d9772557d7f0fe40dc1eeddef0b39a",
+                        sha256="78dacf6053b7c1719847319fc96dd6ea24d9772557d7f0fe40dc1eeddef0b39a",
                         relationship={"offset": "0x19d49", "action": "extracted"},
                         data=[
                             EventData(
