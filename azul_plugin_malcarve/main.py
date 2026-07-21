@@ -3,6 +3,8 @@
 This plugin carves and features obfuscated content from malware artifacts.
 """
 
+from typing import Any
+
 from azul_runner import (
     FV,
     BinaryPlugin,
@@ -66,7 +68,7 @@ class AzulPluginMalcarve(BinaryPlugin):
 
     def execute(self, job: Job) -> State:
         """Run across all file types looking for embedded content."""
-        features: dict[str, FV] = {}
+        features: dict[str, Any] = {}
 
         data: bytes = job.get_data().read()
         max_depth: int = 4
