@@ -122,7 +122,7 @@ dev = [
 
 [[package]]
 name = "azul-runner"
-version = "12.0.149"
+version = "12.0.151"
 source = { registry = "https://devpi.acsc.internal/azul/stable/" }
 dependencies = [
     { name = "azul-bedrock" },
@@ -135,7 +135,7 @@ dependencies = [
     { name = "watchdog" },
 ]
 wheels = [
-    { url = "https://devpi.acsc.internal/azul/stable/+f/0ef/a52a6f3c017d0/azul_runner-12.0.149-py3-none-any.whl", hash = "sha256:0efa52a6f3c017d008069f3815f4d65d86188efa74e8137a851e8a4214f794e3" },
+    { url = "https://devpi.acsc.internal/azul/stable/+f/71d/6ecda98116558/azul_runner-12.0.151-py3-none-any.whl", hash = "sha256:71d6ecda981165581677fa897b69ef2b8241b2572db23610a509afd1fcb795e3" },
 ]
 
 [package.optional-dependencies]
@@ -958,13 +958,13 @@ wheels = [
 
 [[package]]
 name = "malcarve-cbl"
-version = "12.0.38"
+version = "12.0.39"
 source = { registry = "https://devpi.acsc.internal/azul/stable/" }
 dependencies = [
     { name = "olefile" },
 ]
 wheels = [
-    { url = "https://devpi.acsc.internal/azul/stable/+f/265/c3f5227998dfe/malcarve_cbl-12.0.38-py3-none-any.whl", hash = "sha256:265c3f5227998dfe9d7552f08562c45065f67f47029ccc5ee5046b86f0a1f8b2" },
+    { url = "https://devpi.acsc.internal/azul/stable/+f/cc5/dd755f61758d3/malcarve_cbl-12.0.39-py3-none-any.whl", hash = "sha256:cc5dd755f61758d38db5146aca31c7af80fbeeb0e9f7bc5b5d9cd5eeb05481b4" },
 ]
 
 [[package]]
