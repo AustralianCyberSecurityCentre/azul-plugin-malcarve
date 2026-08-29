@@ -990,13 +990,13 @@ wheels = [
 
 [[package]]
 name = "malcarve-cbl"
-version = "13.0.5"
+version = "13.0.6"
 source = { registry = "https://devpi.acsc.internal/azul/stable/" }
 dependencies = [
     { name = "olefile" },
 ]
 wheels = [
-    { url = "https://devpi.acsc.internal/azul/stable/+f/243/fdc6237e76cb0/malcarve_cbl-13.0.5-py3-none-any.whl", hash = "sha256:243fdc6237e76cb0d350effa6316ffc3e14d2afe8eb787b446f39709edf09f79" },
+    { url = "https://devpi.acsc.internal/azul/stable/+f/5bc/7ee17bf5329dc/malcarve_cbl-13.0.6-py3-none-any.whl", hash = "sha256:5bc7ee17bf5329dc1776947334a521578f4b65df56b1ea74eafb0677ae6897e1" },
 ]
 
 [[package]]
