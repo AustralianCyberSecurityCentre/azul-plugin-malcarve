@@ -30,7 +30,7 @@ class AzulPluginMalcarve(BinaryPlugin):
     )
     FEATURES = [
         Feature("embedded_payload_type", desc="Type of payload found embedded in content", type=FeatureType.String),
-        Feature("embedded_url", desc="URL found embedded in content", type=FeatureType.String),
+        Feature("embedded_url", desc="URL found embedded in content", type=FeatureType.Uri),
         Feature("user_agent", desc="User-Agent found embedded in content", type=FeatureType.String),
         Feature("payload_obfuscation", desc="Type of obfuscation of embedded content", type=FeatureType.String),
         Feature(
