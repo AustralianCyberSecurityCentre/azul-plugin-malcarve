@@ -4,6 +4,7 @@ This plugin carves and features obfuscated content from malware artifacts.
 """
 
 from typing import Any
+from urllib.parse import urlparse
 
 from azul_runner import (
     FV,
@@ -30,6 +31,11 @@ class AzulPluginMalcarve(BinaryPlugin):
     )
     FEATURES = [
         Feature("embedded_payload_type", desc="Type of payload found embedded in content", type=FeatureType.String),
+        Feature(
+            "invalid_embedded_url",
+            desc="URL found embedded in content that is not a valid URL",
+            type=FeatureType.String,
+        ),
         Feature("embedded_url", desc="URL found embedded in content", type=FeatureType.Uri),
         Feature("user_agent", desc="User-Agent found embedded in content", type=FeatureType.String),
         Feature("payload_obfuscation", desc="Type of obfuscation of embedded content", type=FeatureType.String),
@@ -124,14 +130,32 @@ class AzulPluginMalcarve(BinaryPlugin):
             )
 
             if format.type == FormatEnum.URL:
-                features.setdefault("embedded_url", []).append(
-                    FV(
-                        value=format.content.decode(),
-                        label=format.encoding_info.encoding_offsets_string,
-                        offset=format.encoding_info.base_offset,
-                        size=format.encoding_info.base_size,
+                try:
+                    # Parse url to verify it's valid.
+                    r = urlparse(format.content.decode())
+                    # Attempt to cast port to int to verify the port is valid.
+                    if r.port is not None:
+                        int(r.port)
+                    # Embedded_url is valid so encode it
+                    features.setdefault("embedded_url", []).append(
+                        FV(
+                            value=format.content.decode(),
+                            label=format.encoding_info.encoding_offsets_string,
+                            offset=format.encoding_info.base_offset,
+                            size=format.encoding_info.base_size,
+                        )
                     )
-                )
+                except Exception:
+                    # If the url failed to parse add it as invalid embedded url instead
+                    features.setdefault("invalid_embedded_url", []).append(
+                        FV(
+                            value=format.content.decode(),
+                            label=format.encoding_info.encoding_offsets_string,
+                            offset=format.encoding_info.base_offset,
+                            size=format.encoding_info.base_size,
+                        )
+                    )
+
             elif format.type == FormatEnum.USER_AGENT:
                 features.setdefault("user_agent", []).append(
                     FV(
