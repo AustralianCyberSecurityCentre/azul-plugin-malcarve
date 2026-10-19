@@ -1528,3 +1528,83 @@ class TestExecute(test_template.TestPlugin):
                 },
             ),
         )
+
+    def test_invalid_embedded_url(self):
+        """Test on a executable with an invalid embedded url.
+
+        To allow testing for invalid URL features.
+        """
+        result = self.do_execution(
+            data_in=[
+                (
+                    "content",
+                    self.load_test_file_bytes(
+                        "92a80afcb7505f56cfaf86d583303bebba2ba82a0598268fe04b66a566e7410b",
+                        "PCGuard.exe file that appears to be benign.",
+                    ),
+                )
+            ]
+        )
+        self.assertJobResult(
+            result,
+            JobResult(
+                state=State(State.Label.COMPLETED),
+                events=[
+                    Event(
+                        sha256="92a80afcb7505f56cfaf86d583303bebba2ba82a0598268fe04b66a566e7410b",
+                        features={
+                            "embedded_payload_type": [
+                                FV("url", label="(0x3f757e-0x3f75a4)", offset=4158846, size=38),
+                                FV("url", label="(0x40bceb-0x40bd1d)", offset=4242667, size=50),
+                                FV("url", label="(0x432b00-0x432b11)", offset=4401920, size=17),
+                                FV("url", label="(0x43351d-0x4335c1)", offset=4404509, size=164),
+                                FV("url", label="(0x4379ab-0x437a54)", offset=4422059, size=169),
+                                FV("url", label="(0x43a3f8-0x43a43a)", offset=4432888, size=66),
+                                FV("url", label="(0x46dca1-0x46dcf0)", offset=4644001, size=79),
+                            ],
+                            "embedded_url": [
+                                FV("http://127.0.0.16", label="(0x432b00-0x432b11)", offset=4401920, size=17),
+                                FV(
+                                    "https://1.1.1.1/dns-queryContent-Typeapplication/dns-messageAccept",
+                                    label="(0x43a3f8-0x43a43a)",
+                                    offset=4432888,
+                                    size=66,
+                                ),
+                                FV(
+                                    "https://docs.rs/getrandom#nodejs-es-module-support",
+                                    label="(0x40bceb-0x40bd1d)",
+                                    offset=4242667,
+                                    size=50,
+                                ),
+                                FV(
+                                    "https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eof",
+                                    label="(0x46dca1-0x46dcf0)",
+                                    offset=4644001,
+                                    size=79,
+                                ),
+                                FV(
+                                    "https://github.com/clap-rs/clap/issues",
+                                    label="(0x3f757e-0x3f75a4)",
+                                    offset=4158846,
+                                    size=38,
+                                ),
+                                FV(
+                                    "https://github.com/clap-rs/clap/issuesversionoffline_minutesconnection_grace_secondsallowed_appsblocked_domainsweb_allowlistenforce_appsenforce_webActiontypepayload",
+                                    label="(0x43351d-0x4335c1)",
+                                    offset=4404509,
+                                    size=164,
+                                ),
+                            ],
+                            "invalid_embedded_url": [
+                                FV(
+                                    "http://127.0.0.1:8787EnrollCODEOtpCheckPolicyPreviewofflineOFFLINEDnsTestlistenLISTEN127.0.0.1:5353UpdateConfigurefeedFEEDPUBLIC_KEYpublic-keyUpdateValidatefileFILEfatal",
+                                    label="(0x4379ab-0x437a54)",
+                                    offset=4422059,
+                                    size=169,
+                                )
+                            ],
+                        },
+                    )
+                ],
+            ),
+        )
