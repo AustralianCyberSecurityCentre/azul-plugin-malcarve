@@ -1160,13 +1160,13 @@ wheels = [
 
 [[package]]
 name = "malcarve-cbl"
-version = "14.0.11"
+version = "14.0.13"
 source = { registry = "https://devpi.acsc.internal/azul/stable/" }
 dependencies = [
     { name = "olefile" },
 ]
 wheels = [
-    { url = "https://devpi.acsc.internal/azul/stable/+f/cb0/f0a070444797e/malcarve_cbl-14.0.11-py3-none-any.whl", hash = "sha256:cb0f0a070444797e1a6914117bda8d54b06d3c75d9f53a46c810238631208875" },
+    { url = "https://devpi.acsc.internal/azul/stable/+f/29e/32b2631052278/malcarve_cbl-14.0.13-py3-none-any.whl", hash = "sha256:29e32b26310522788b55f3922b367a65db98473eb6bd6c9051a07ba68cf1f11c" },
 ]
 
 [[package]]
